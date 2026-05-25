@@ -83,6 +83,7 @@ classes/
 .m2/  # Maven本地仓库（通常不提交）
 
 # IDE配置
+.idea/
 *.iml
 .classpath
 .project
