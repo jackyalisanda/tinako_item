@@ -1,0 +1,89 @@
+# 操作系统文件
+.DS_Store        # MacOS的资源文件
+Thumbs.db        # Windows的缩略图缓存
+
+# 临时文件
+*.swp            # Vim的临时文件
+*~               # 很多编辑器的临时文件（如Emacs）
+
+# -------------- 依赖与包管理 --------------
+# pnpm依赖目录（必忽略）
+node_modules/
+# pnpm的链接文件（自动生成，无需跟踪）
+.pnp
+.pnp.js
+# pnpm调试日志
+pnpm-debug.log*
+
+# 注意：pnpm-lock.yaml需要提交，确保团队依赖版本一致
+# 不要添加忽略pnpm-lock.yaml的规则
+
+
+# -------------- Vue项目构建产物 --------------
+# Vue CLI/ vite 构建目录
+dist/
+build/
+out/
+# Vite缓存目录
+.vite/
+# VuePress构建产物（如果使用）
+.vuepress/dist/
+.vuepress/.cache/
+
+
+# -------------- 环境配置与敏感信息 --------------
+# 环境变量文件（包含API密钥等敏感信息）
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+.env.*.local
+
+
+# -------------- 开发工具与缓存 --------------
+# 测试覆盖率报告（自动生成）
+coverage/
+# Jest测试缓存
+.jest-cache/
+# ESLint缓存
+.eslintcache
+# 通用缓存目录
+.cache/
+
+
+# -------------- 编辑器与系统文件 --------------
+# IDE配置目录
+.idea/
+.vscode/
+*.sublime-*
+# 编辑器临时文件
+*.swp
+*.swo
+*~
+# 系统自动生成文件
+.DS_Store  # Mac
+Thumbs.db  # Windows
+
+
+# -------------- 其他临时文件 --------------
+tmp/
+temp/
+*.log
+
+# 编译产物
+target/
+classes/
+*.class
+
+# 依赖管理
+*.jar
+*.war
+*.ear
+.m2/  # Maven本地仓库（通常不提交）
+
+# IDE配置
+.idea/
+*.iml
+.classpath
+.project
